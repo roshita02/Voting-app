@@ -1,0 +1,19 @@
+class VotesController < ApplicationController
+  def index
+    @votes = Vote.totals
+  end
+
+  def create
+    Vote.create(vote_params)
+    @vote = Vote.totals
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  private
+
+  def vote_params
+    params.require(:vote).permit(:color)
+  end
+end
