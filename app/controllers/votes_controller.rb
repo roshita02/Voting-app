@@ -5,7 +5,7 @@ class VotesController < ApplicationController
 
   def create
     Vote.create(vote_params)
-    @vote = Vote.totals
+    @votes = Vote.totals
     respond_to do |format|
       format.js
     end
