@@ -6,7 +6,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
-    "d3": "^5.14.2",
+    "d3": "^7.6.1",
     "jquery": "^3.4.1",
     "turbolinks": "^5.2.0"
   },
